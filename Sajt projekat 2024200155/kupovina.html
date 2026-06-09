@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poruči</title>
+    <link rel="stylesheet" href="stil.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script/jquery.js"></script>
+    <script src="script/script.js"></script>
+    <script src="script/ajax.js"></script>
+    
+</head>
+<body>
+    <div class="wrapper">
+    <header>
+        <img src="slike/logoo.jpg" alt="logo">
+        <nav class="menu">
+                <a href="pocetna.html">Početna</a>
+                <a href="knjige.html">Knjige</a>
+                <a href="kupovina.html">Poruči</a>
+        </nav>   
+    </header>
+
+    <section class="main">
+        <h1><b>Podaci za kupovinu</b></h1><br><br>
+        <article class="knjige2">
+            <fieldset id="prvi">
+                <br>
+                <legend>Izaberite boju pozadine forme</legend>
+        <form onclick="color()">
+            <input type="radio" name="boja" value="lightblue" onclick="boji()"><label for="">Plava</label>
+     <input type="radio" name="boja" value="pink" onclick="boji()"><label for="">Roze</label>
+     <input type="radio" name="boja" value="yellow" onclick="boji()"><label for="">Zuta</label>
+     <input type="radio" name="boja" value="green" onclick="boji()"><label for="">Zelena</label>
+        </form>
+        <br>
+        <form
+                <label for="">Ime i Prezime</label><input type="text" id="ime" onfocus="checkIme()" onblur="checkIme()"><span id="imePoruka"></span> <br>
+                <br>
+                <label for="">Broj telefona</label><input type="tel"  id="telefon" onfocus="checkTel()" onblur="checkTel()"><span id="telPoruka"></span> <br>
+                <br>
+                <label for="">Email:</label><input type="email" id="email" name="email" onfocus="checkEmail()" onblur="checkEmail()"><span id="emailPoruka"></span><br>
+                 <br>
+                 <fieldset id="drugi">
+                 <legend>Izaberite knjige koje kupujete</legend>
+                 <br>
+        <input type="checkbox" name="knjige1" id="knjige1" value="Powerless"><label for="">Powerless</label><br>
+        <input type="checkbox" name="knjige1" id="knjige1" value="ShatterMe"><label for="">ShatterMe</label><br>
+        <input type="checkbox" name="knjige1" id="knjige1" value="TheSongOfAchilles"><label for="">TheSongOfAchilles</label><br>
+        <input type="checkbox" name="knjige1" id="knjige1" value="FourthWing"><label for="">FourthWing</label><br>
+        <br>
+    </fieldset>
+    <br><br>
+        <label for="">Unesi komentar</label>
+        <input type="text" id="komentar"  onfocus="poljeUFokusu()" onblur="resetuj()"><span id="greskaKomentar"></span> <br>
+        <br><br>
+        <input type="button" value="Potvrdi" id="dugme" onclick="formatParagraph();ispisjson()"> <br><br>
+        <input type="button" id="jsonispis" value="Prikazi komentare ostalih kupaca" onclick="jsonupis()"><br>
+    </form>
+            </fieldset>
+        </article>
+    </section>
+
+    <footer class="footer">
+        <p style="font-weight: bold;">Kontakt knjižare: 069-222-222</p>
+        <p style="font-weight: bold;">Natalija Romčević - 2024200155</p>
+    </footer>
+</div>
+<p id="formatirano" style="color: green;"></p>
+    <p id="greska" style="color: red;"></p>
+    <p id="JSONispis"></p><br>
+    <p id="JSONupis"></p>
+    <p id="upis"></p>
+</body>
+</html>

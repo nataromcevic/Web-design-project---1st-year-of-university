@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    width: 1550px;
+    margin: 0px auto;
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color:rgb(188, 163, 145)
+}
+header {
+    background-color: #ca87bc;
+    color: #a9cfd6;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1100px;
+}
+header img{
+    height: 150px;
+    width: 150px;
+}
+.menu{
+    display: flex;
+    gap: 30px;
+    font-size: 17px;
+    font-family:cursive;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    color: rgb(166, 212, 207);
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+nav a{
+    background-color: rgb(155, 202, 200);
+    
+}
+.main {
+    padding: 30px;
+    text-align: center;
+}
+article {
+    background-color: #e0aed0;
+    padding: 25px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+.knjigee h3 {
+    color: #351d36;
+    margin-bottom: 15px;
+}
+.uvod h2 {
+    color: #3a1d1d;
+    margin-bottom: 15px;
+}
+article img {
+    width: 700px;
+    height: 600px;
+    border: 2px solid black;
+    margin-top: 20px;
+    border-radius: 0px;
+}
+.footer {
+    background-color: #ca87bc;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 1000px;
+}
+
+.knjigee img {
+    width: 200px;
+    height: 300px;
+    border: 1px solid black;
+    margin-top: 20px;
+    border-radius: 0px;
+}

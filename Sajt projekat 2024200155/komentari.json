@@ -1,0 +1,22 @@
+{
+    "komentari": [
+        {
+            "ime": "Ana Peric",
+            "tel": "061-251-145",
+            "email": "anaperic@gmail.com",
+            "knjige": "ShatterMe, Powerless"
+        },
+        {
+            "ime": "Vuk Maric",
+            "tel": "064-417-958",
+            "email": "vukmaric@gmail.com",
+            "knjige": "FourthWing"
+        },
+        {
+            "ime": "Lazar Lazovic",
+            "tel": "062-361-415",
+            "email": "lazalazovic@gmail.com",
+            "knjige": "TheSongOfAchilles, ShatterMe"
+        }
+    ]
+}
